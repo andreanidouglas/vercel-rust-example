@@ -22,6 +22,9 @@ $ cd wasm # rust folder
 $ wasm-pack build --target web
 ```
 
+After creating the `.wasm` and `.js` files, remove any hardcoded references inside
+`wasm/wasm.js`. Otherwise vercel will block your package of being published.
+
 Run the app at the root of the repository:
 
 ```bash
