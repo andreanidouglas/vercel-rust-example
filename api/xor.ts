@@ -12,7 +12,7 @@ export const config = {
 export default async function handler(request: Request, event: Event) {
     await init(wasm);
 
-    const value = get(1);
+    const value = get(69);
 
   return new Response("Value is: " + value)
 }
